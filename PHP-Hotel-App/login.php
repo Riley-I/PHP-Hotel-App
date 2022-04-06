@@ -59,12 +59,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            //header("location: user.php");
-                            ?>
-                            <script type="text/javascript">
-                                window.location.href = 'http://rileyidev.ca:8081/PHP-Hotel-App/user.php';
-                                </script>
-                                <?php
+                            header("location: user.php");
+                    
                         } else{
                             // Password is not valid, display a generic error message
                             $login_err = "Invalid username or password.";

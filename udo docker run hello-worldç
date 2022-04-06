@@ -1,0 +1,19 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Fri 2022-04-01 18:36:44 UTC; 32min ago
+     Docs: https://docs.docker.com
+ Main PID: 12375 (dockerd)
+    Tasks: 11
+   CGroup: /system.slice/docker.service
+           └─12375 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.421876239Z" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.472337339Z" level=warning msg="Your kernel does not support swap memory limit"
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.472402830Z" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.472764640Z" level=info msg="Loading containers: start."
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.689976639Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.731677230Z" level=info msg="Loading containers: done."
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.763942490Z" level=info msg="Docker daemon" commit="20.10.7-0ubuntu5~18.04.3" graphdriver(s)=overlay2 version=20.10.7
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.764771133Z" level=info msg="Daemon has completed initialization"
+Apr 01 18:36:44 Ubuntu-Linux systemd[1]: Started Docker Application Container Engine.
+Apr 01 18:36:44 Ubuntu-Linux dockerd[12375]: time="2022-04-01T18:36:44.785107198Z" level=info msg="API listen on /var/run/docker.sock"

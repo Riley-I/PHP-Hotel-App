@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
   db:
     image: mysql:5.7
@@ -28,7 +28,7 @@ services:
     volumes:
       #      you could map custom plugins and themes here too.
       # directory path on left: Container path on right
-      - ./PHP-Hotel-App:/var/www/html/PHP-Hotel-App
+      - ./PHP-Hotel-App:/var/www/html/
     ports:
       - "8081:80"
     restart: always
