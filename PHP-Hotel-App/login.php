@@ -7,6 +7,11 @@ if ( ! session_id() ) {
 
 // Include config file
 require_once "config/connectdb.php";
+
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+  }
  
 // Define variables and initialize with empty values
 $username = $password = "";

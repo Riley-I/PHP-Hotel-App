@@ -133,7 +133,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary w3-amber" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2 w3-teal" value="Reset">
             </div>
             <p>Already have an account? <a href="admin-login.php">Login here</a>.</p>
         </form>

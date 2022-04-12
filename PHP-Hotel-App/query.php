@@ -68,7 +68,7 @@ require_once "config/connectdb.php";
     };
     ?>
   
-  <a href="user.php">Book Reservation!</a><br>
+  <a href="login.php">Book Reservation!</a><br>
    <a href="index.php">Or, Search different dates!</a>
   
      <p>If you have any questions, do not hesitate to contact us!</p>

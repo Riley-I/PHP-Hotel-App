@@ -1,5 +1,5 @@
 <?php
-// Initialize the session
+//Initialize the session
 if ( ! session_id() ) {
   session_start();
   }
