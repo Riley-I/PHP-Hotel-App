@@ -1,6 +1,6 @@
 <?php
 //USER LOGIN
-// Initialize the session
+//Initialize the session
 if ( ! session_id() ) {
     session_start();
     }
@@ -8,10 +8,10 @@ if ( ! session_id() ) {
 // Include config file
 require_once "config/connectdb.php";
 
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-  }
+// if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+//     header("location: login.php");
+//     exit;
+//   }
  
 // Define variables and initialize with empty values
 $username = $password = "";
